@@ -4,6 +4,10 @@ import './App.css'
 import { Greet } from './components/Greet'
 import { Person } from './components/Person'
 import { PersonList } from './components/PersonList'
+import { Status } from './components/Status'
+import { Heading } from './components/Heading'
+import { Oscar } from './components/Oscar'
+import { Button } from './components/Button'
 
 function App() {
   const personName = {
@@ -22,6 +26,13 @@ function App() {
       <Greet name="Parwer" messageCount={20} isLogIn={true}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
+      <Status status='asd'/>
+      <Heading>1234</Heading>
+      <Oscar>
+        <Heading>123</Heading>
+      </Oscar>
+      <Button handleClick={(event, id) => {console.log(1234)}}/>
+
     </div>
   )
 }
