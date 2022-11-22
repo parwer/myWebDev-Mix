@@ -1,21 +1,21 @@
-import { useState } from 'react'
 import './App.css'
-import { Box } from './components/context/Box'
-import { ThemeContextProcider } from './components/context/ThemeContext'
-import { Counter } from './components/state/Counter'
-import { LoggedIn } from './components/state/LoggedIn'
-import { User } from './components/state/User'
-
+import { Private } from './components/auth/Private'
+import { Profile } from './components/auth/Profile'
+import { Counter } from './components/class/Counter'
+import { List } from './components/generics/List'
+import { RandomNumber } from './components/restriction/RendomNumber'
+import { Toast } from './components/templateliteral/Toast'
 
 function App() {
 
 
   return (
     <div className="App">
-      <Counter/>
-      <ThemeContextProcider>
-        <Box/>
-      </ThemeContextProcider>
+      <RandomNumber
+        value={10} 
+        isPositive
+      />
+      <Toast position='center'/>
     </div>
   )
 }
